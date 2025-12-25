@@ -1,0 +1,47 @@
+{
+  "name": "safepipe-core",
+  "version": "1.0.0",
+  "description": "Zero-Knowledge PII Redaction Engine - The open-source core of SafePipe.eu",
+  "main": "dist/pii-filter.js",
+  "types": "dist/pii-filter.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-node tests/example.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pii",
+    "redaction",
+    "privacy",
+    "gdpr",
+    "security",
+    "llm",
+    "data-protection",
+    "sanitization",
+    "zero-knowledge"
+  ],
+  "author": "SafePipe.eu Security Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/safepipe/safepipe-core.git"
+  },
+  "homepage": "https://safepipe.eu",
+  "bugs": {
+    "url": "https://github.com/safepipe/safepipe-core/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
+
